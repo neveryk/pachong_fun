@@ -16,6 +16,7 @@ import re
 # dict={
 #     "o":"NMSL"
 # }
+# test
 def dowloard(html):
     pars=re.findall('<img.*?src="([a-zA-z].*?)"',html,re.S)
     i=1

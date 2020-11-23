@@ -1,7 +1,6 @@
 import os
 import re
 import requests
-#123
 class test_dowloard():
     def __init__(self,url,header):
         self.url=url
@@ -37,5 +36,6 @@ if __name__ == '__main__':
     }
     m=test_dowloard(url,header)
     q=m.main()
+    print(q)
     par=m.parse(q)
     m.dowloa(par)

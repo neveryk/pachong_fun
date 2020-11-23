@@ -20,13 +20,14 @@ def dowloard(html):
     pars=re.findall('<img.*?src="([a-zA-z].*?)"',html,re.S)
     i=1
     for key in pars:
-        print("开始下载"+str(i)+key+"\r\n")
-        pic=requests.get(key,timeout=10)
-        name=str(i)+'.jpg'
-        fp=open(name,'wb')
-        fp.write(pic.content)
-        fp.close()
+        # print("开始下载"+str(i)+key+"\r\n")
+        # pic=requests.get(key,timeout=10)
+        # name=str(i)+'.jpg'
+        # fp=open(name,'wb')
+        # fp.write(pic.content)
+        # fp.close()
         i+=1
+
 
 def main(url,header):
     r=requests.get(url,headers=header)
